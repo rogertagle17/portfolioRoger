@@ -13,94 +13,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* *{ 
-    margin: 25;
-    padding: 25;
-    font-family: sans-serif;
-   
-}
-.hero{
-    position: relative;
-    width:100%;
-    width:100vh;
-    background: #867b86;
-
-}
-nav{
-    display:flex;
-    width: 84%;
-    margin:auto;
-    padding:20px 0px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav ul li{
-    display:inline;
-    text-align: center;
-    list-style: none;
-    margin-right: 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color:aqua;
-    font-weight: bold;
-}
-nav ul li a:hover{
-    color:blue;
-}
-.detail{
-    margin-left: 8%;
-    margin-top: 15%;
-}
-
-.detail h1{
-    font-size: 50px;
-    color:black;
-    margin-bottom:20px;
-}
-span{
-    color:orange;
-}
-.detail p{
-    color:gray;
-    line-height: 22px;
-}
-
-.detail a{
-    background: #000;
-    padding: 10px 18px;
-     text-decoration: none;
-     font-weight: bold;
-     color:blue;
-     display:inline-block;
-     margin: 30px 0;
-     border-radius:5px ;
-}
-.image{
-    width:45%;
-    height:80%;
-    position: absolute;
-    bottom:0;
-    right:100px;
-}
-.image img{
-    height:100%;
-    position: absolute;
-    left:50%;
-    bottom:0;
-    transform:translate(-50%);
-    transition: bottom 1s,left 1s;
-
-}
-.image:hover .shape{
-    bottom:100px;
-}
-.images:hover .boy{
-    left:100%;
-
-} */
-
 nav, ul {
     display: flex;
 }
@@ -141,6 +53,10 @@ div.image {
     align-items: center;
 }
 
+#about > h2 {
+    text-align: center;
+}
+
 .image > img {
     width: 25vw;
     border-radius: 20px;
@@ -152,6 +68,18 @@ div.mainContainer {
     justify-content: space-around;
 }
 
+span#projectContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100vw;
+}
+
+span#projectContainer > img {
+    width: 30vw;
+    height: auto;
+}
+
 a#buttonCV {
     background: green;
     padding: 10px;
@@ -159,6 +87,12 @@ a#buttonCV {
     color: rgb(187, 46, 46);
     font-weight: 500;
 }
+
+div#project > span > img {
+    width: 60vw;
+    margin: 2em;
+}
+
 /* ===== CONTACT =====*/
 .contact__input {
     width: 100%;
@@ -178,14 +112,28 @@ a#buttonCV {
     cursor: pointer;
     margin-left: center;
   }
-/* ===== PROJECTS =====*/
-.work__container {
-    row-gap: 2rem;
+
+.contact__container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+  form.contact__form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
   }
+/* ===== PROJECTS =====*/
+div.work__container {
+    display: flex;
+  }
+
   .work__img {
     box-shadow: 0px 4px 25px rgba(104, 12, 224, 0.15);
     border-radius: 0.5rem;
-    overflow: hidden;
   }
   .work__img img {
     transition: 1s;
