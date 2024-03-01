@@ -57,6 +57,10 @@ div.image {
     text-align: center;
 }
 
+div#about {
+    padding: 20vh;
+}
+
 .image > img {
     width: 25vw;
     border-radius: 20px;
